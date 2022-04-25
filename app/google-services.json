@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "378975634504",
+    "project_id": "postsystem-c3735",
+    "storage_bucket": "postsystem-c3735.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378975634504:android:e38439560aabedbbac847d",
+        "android_client_info": {
+          "package_name": "com.enu.postsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378975634504-nbt685bjtv180amg38hvrtnecn008e3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFUUBru2uDZ48RqM34cq3FdyQvm-VtYBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378975634504-nbt685bjtv180amg38hvrtnecn008e3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
