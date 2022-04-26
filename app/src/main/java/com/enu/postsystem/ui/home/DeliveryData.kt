@@ -6,8 +6,8 @@ data class DeliveryData(
     val phone: String?,
     val vesTovera: String,
     val city: String?,
-    val price: String,
-    val textDelivery: Int
+    val price: Int,
+    val textDelivery: String?
 ) {
 
 }

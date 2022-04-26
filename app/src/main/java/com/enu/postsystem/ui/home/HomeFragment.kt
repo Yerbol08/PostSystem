@@ -70,30 +70,21 @@ class HomeFragment : Fragment(), AdapterView.OnItemSelectedListener {
             val textDelivery = java.lang.String.valueOf(binding.inputTextConf.text)
             val city:String = binding.spinner.selectedItem.toString()
             if (nameTovar == "") {
-                binding.tovarName.setError("Введите название для конференции!")
+                binding.tovarName.setError("Введите название товара!")
             } else if (dateConf == "") {
-                binding.inputDate.error = "Выберите дату конференции!"
+                binding.inputDate.error = "Выберите дату!"
             } else if (vesTovara == "") {
-                binding.tovarKG.setError("Введите местоположение конференции!")
+                binding.tovarKG.setError("Введите все товара!")
             } else if (phone == "") {
-                binding.phoneNumber.setError("Введите форму участия!")
+                binding.phoneNumber.setError("Введите номер телефона!")
             } else if (textDelivery == "") {
-                binding.inputTextConf.setError("Введите организаторов конференции!")
+                binding.inputTextConf.setError("Введите описание товара!")
             }  else {
 
                 val price = getprice(vesTovera = vesTovara.toInt(), city)
-                addDateFireStore(
-                    nameTovar,
-                    dateConf,
-                    phone,
-                    vesTovara,
-                    textDelivery,
-                    city,
-                    price
-                )
+                addDateFireStore(nameTovar, dateConf, phone, vesTovara, city, price, textDelivery)
             }
         })
-
 
         return root
     }
@@ -102,7 +93,7 @@ class HomeFragment : Fragment(), AdapterView.OnItemSelectedListener {
         val vesTovara: String = java.lang.String.valueOf(binding.tovarKG.getText())
         val city:String = binding.spinner.selectedItem.toString()
         if (vesTovara == "") {
-            binding.tovarKG.setError("Введите местоположение конференции!")
+            binding.tovarKG.setError("Введите все товара!")
         } else{
             val price = getprice(vesTovera = vesTovara.toInt(), city)
             binding.priceTxt.setText(price.toString() + " kzt")
@@ -115,11 +106,9 @@ class HomeFragment : Fragment(), AdapterView.OnItemSelectedListener {
             i = 4
         }else if (binding.spinner.selectedItem.toString()=="Қордай"){
             i =2
-        }
-        else if (binding.spinner.selectedItem.toString()=="Мерке"){
+        }else if (binding.spinner.selectedItem.toString()=="Мерке"){
             i =3
-        }
-        else if (binding.spinner.selectedItem.toString()=="Шу"){
+        } else if (binding.spinner.selectedItem.toString()=="Шу"){
             i =3
         }else if (binding.spinner.selectedItem.toString()=="Шымкент"){
             i =6
@@ -128,7 +117,6 @@ class HomeFragment : Fragment(), AdapterView.OnItemSelectedListener {
         }else if (binding.spinner.selectedItem.toString()=="Арал"){
             i =11
         }
-
         return (vesTovera * i)*100
     }
 
@@ -138,8 +126,8 @@ class HomeFragment : Fragment(), AdapterView.OnItemSelectedListener {
         phone: String?,
         vesTovera: String,
         city: String?,
-        price: String,
-        textDelivery: Int
+        price: Int,
+        textDelivery: String
     ) {
         val db: FirebaseFirestore = FirebaseFirestore.getInstance()
         val dbConference: CollectionReference = db.collection("AtuPost")
@@ -149,11 +137,12 @@ class HomeFragment : Fragment(), AdapterView.OnItemSelectedListener {
             override fun onSuccess(documentReference: DocumentReference?) {
 
                 binding.tovarName.setText("")
-                binding.inputDate.setText("")
+                binding.showDate.setText("")
                 binding.inputTextConf.setText("")
                 binding.tovarKG.setText("")
                 binding.priceTxt.setText("0 kzt")
                 binding.inputTextConf.setText("")
+                binding.phoneNumber.setText("")
 
             }
         }).addOnFailureListener(object : OnFailureListener {
