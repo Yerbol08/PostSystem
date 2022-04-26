@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/app_name"
-        app:tint="@color/black" />
+         />
 
     <TextView
         android:id="@+id/textView"
@@ -24,7 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:text="Войти"
-        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/backBtn"
         app:layout_constraintStart_toEndOf="@+id/backBtn"
@@ -54,7 +53,6 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="16dp"
-            android:textColor="@color/black"
             android:ems="10"
             android:textSize="14sp"
             android:hint="Email Address"
@@ -133,7 +131,7 @@
             android:id="@+id/loginToReg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
+            android:layout_marginStart="5dp"
             android:text="@string/sign_up"
             android:textSize="15sp"
             android:textStyle="bold" />

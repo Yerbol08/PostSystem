@@ -1,20 +1,20 @@
 <resources>
     <string name="app_name">PostSystem</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Тапсырыс беру</string>
+    <string name="title_dashboard">Тапсырыстар</string>
+    <string name="title_notifications">Аккаунт</string>
 
 
-    <string name="sign_up_using_email_and_password">Sing Up using Email</string>
-    <string name="sign_in_using_email_and_password">Sing In using Email</string>
+    <string name="sign_up_using_email_and_password">Электрондық пошта арқылы регистрация</string>
+    <string name="sign_in_using_email_and_password">Электрондық пошта арқылы авторизация</string>
 
 
     <string name="best_way_to_invest_your_money">АЛМАТЫ ТЕХНОЛОГИЯЛЫҚ УНИВЕРСИТЕТІ</string>
     <string name="create_account">Создать аккаунт</string>
 
-    <string name="i_m_already_a_member">I am already a member</string>
-    <string name="sign_in">Sing In</string>
-    <string name="i_am_a_new_user">I am a new user</string>
+    <string name="i_m_already_a_member">Мен қазірдің өзінде тіркелгенмін</string>
+    <string name="sign_in">Авториазция</string>
+    <string name="i_am_a_new_user">Мен жана қолданушымын </string>
 
-    <string name="sign_up">SingUp</string>
+    <string name="sign_up">Регистрация</string>
 </resources>

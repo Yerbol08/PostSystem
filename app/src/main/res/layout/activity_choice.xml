@@ -8,41 +8,12 @@
     tools:context=".Choice"
     >
 
-    <TextView
-        android:id="@+id/groww_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
-        android:gravity="center"
-        android:text="@string/best_way_to_invest_your_money"
-
-        android:textColor="@color/black"
-        android:textSize="27dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/invest"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:gravity="center"
-        android:text="@string/best_way_to_invest_your_money"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/groww_title" />
-
     <Button
         android:id="@+id/sign_up_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="484dp"
         android:layout_marginEnd="40dp"
         android:onClick="gotosignuppage"
         android:text="@string/sign_up_using_email_and_password"
@@ -50,8 +21,9 @@
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/invest"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="OnClick" />
 
     <Button
@@ -59,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="40dp"
         android:onClick="gotosigninpage"
         android:text="@string/sign_in_using_email_and_password"
